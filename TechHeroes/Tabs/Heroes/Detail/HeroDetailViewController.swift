@@ -24,6 +24,13 @@ class HeroDetailViewController: UIViewController {
         }
         
         nameLabel.text = hero.firstName + " " + hero.lastName
+        
+        let requestButton = UIBarButtonItem(title: "Request", style: .plain, target: self, action: #selector(HeroDetailViewController.didTapRequestButton))
+        navigationItem.rightBarButtonItem = requestButton
+    }
+    
+    @objc fileprivate func didTapRequestButton() {
+        performSegue(withIdentifier: "requestSegue", sender: nil)
     }
     
 }
