@@ -13,7 +13,6 @@
 		51CCBDC61DD5632F00E56963 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CCBDC51DD5632F00E56963 /* AccountViewController.swift */; };
 		51CCBDC91DD56EC300E56963 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CCBDC81DD56EC300E56963 /* RequestViewController.swift */; };
 		51DF3BC81DD53AC200C4DC89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DF3BC71DD53AC200C4DC89 /* AppDelegate.swift */; };
-		51DF3BCF1DD53AC200C4DC89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51DF3BCE1DD53AC200C4DC89 /* Assets.xcassets */; };
 		51DF3BD21DD53AC200C4DC89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51DF3BD01DD53AC200C4DC89 /* LaunchScreen.storyboard */; };
 		51DF3BDD1DD53AC300C4DC89 /* TechHeroesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DF3BDC1DD53AC300C4DC89 /* TechHeroesTests.swift */; };
 		51DF3BFB1DD542BD00C4DC89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51DF3BF91DD542BD00C4DC89 /* Main.storyboard */; };
@@ -25,6 +24,9 @@
 		51DF3C081DD54ABD00C4DC89 /* HeroListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DF3C071DD54ABD00C4DC89 /* HeroListTableViewCell.swift */; };
 		51DF3C0A1DD54AC800C4DC89 /* HeroListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51DF3C091DD54AC800C4DC89 /* HeroListTableViewCell.xib */; };
 		51DF3C0C1DD54BC700C4DC89 /* HeroListTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DF3C0B1DD54BC700C4DC89 /* HeroListTableViewHeaderView.swift */; };
+		5A40E99F1DD6341400808838 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A40E99B1DD6341400808838 /* Assets.xcassets */; };
+		5A40E9A01DD6341400808838 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A40E99C1DD6341400808838 /* Info.plist */; };
+		5A40E9A31DD6344300808838 /* linkedin-sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A40E9A21DD6344300808838 /* linkedin-sdk.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,9 +46,7 @@
 		51CCBDC81DD56EC300E56963 /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 		51DF3BC41DD53AC200C4DC89 /* TechHeroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechHeroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51DF3BC71DD53AC200C4DC89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		51DF3BCE1DD53AC200C4DC89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51DF3BD11DD53AC200C4DC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		51DF3BD31DD53AC200C4DC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51DF3BD81DD53AC300C4DC89 /* TechHeroesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechHeroesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51DF3BDC1DD53AC300C4DC89 /* TechHeroesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechHeroesTests.swift; sourceTree = "<group>"; };
 		51DF3BDE1DD53AC300C4DC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +60,10 @@
 		51DF3C091DD54AC800C4DC89 /* HeroListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeroListTableViewCell.xib; sourceTree = "<group>"; };
 		51DF3C0B1DD54BC700C4DC89 /* HeroListTableViewHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroListTableViewHeaderView.swift; sourceTree = "<group>"; };
 		51DF3C0D1DD54BD500C4DC89 /* HeroListTableViewHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeroListTableViewHeaderView.xib; sourceTree = "<group>"; };
+		5A40E99B1DD6341400808838 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A40E99C1DD6341400808838 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A40E99E1DD6341400808838 /* TechHeroes-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TechHeroes-Bridging-Header.h"; sourceTree = "<group>"; };
+		5A40E9A21DD6344300808838 /* linkedin-sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "linkedin-sdk.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A40E9A31DD6344300808838 /* linkedin-sdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,8 +136,7 @@
 				51DF3BF91DD542BD00C4DC89 /* Main.storyboard */,
 				51DF3BF31DD541E100C4DC89 /* Tabs */,
 				51DF3BF41DD5423A00C4DC89 /* Models */,
-				51DF3BCE1DD53AC200C4DC89 /* Assets.xcassets */,
-				51DF3BD31DD53AC200C4DC89 /* Info.plist */,
+				5A40E99A1DD633DF00808838 /* Supporting Files */,
 			);
 			path = TechHeroes;
 			sourceTree = "<group>";
@@ -186,6 +190,17 @@
 				51DF3C091DD54AC800C4DC89 /* HeroListTableViewCell.xib */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		5A40E99A1DD633DF00808838 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A40E9A21DD6344300808838 /* linkedin-sdk.framework */,
+				5A40E99B1DD6341400808838 /* Assets.xcassets */,
+				5A40E99C1DD6341400808838 /* Info.plist */,
+				5A40E99E1DD6341400808838 /* TechHeroes-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,12 +288,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A40E9A01DD6341400808838 /* Info.plist in Resources */,
 				51CCBDBE1DD5527900E56963 /* HeroListTableViewHeaderView.xib in Resources */,
 				51DF3BFF1DD5430A00C4DC89 /* Hero.storyboard in Resources */,
 				51DF3BFB1DD542BD00C4DC89 /* Main.storyboard in Resources */,
 				51DF3C0A1DD54AC800C4DC89 /* HeroListTableViewCell.xib in Resources */,
+				5A40E99F1DD6341400808838 /* Assets.xcassets in Resources */,
 				51DF3BD21DD53AC200C4DC89 /* LaunchScreen.storyboard in Resources */,
-				51DF3BCF1DD53AC200C4DC89 /* Assets.xcassets in Resources */,
 				51CCBDC41DD562AD00E56963 /* Account.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +390,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"TechHeroes/Supporting Files\"";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -424,6 +441,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"TechHeroes/Supporting Files\"";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -446,11 +464,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EG77NM7886;
-				INFOPLIST_FILE = TechHeroes/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TechHeroes",
+					"$(PROJECT_DIR)/TechHeroes/Supporting\\ Files",
+					"$(PROJECT_DIR)/TechHeroes/Supporting\\ Files",
+				);
+				INFOPLIST_FILE = "TechHeroes/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = apps.yoon.TechHeroes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TechHeroes/Supporting Files/TechHeroes-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -459,11 +486,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EG77NM7886;
-				INFOPLIST_FILE = TechHeroes/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TechHeroes",
+					"$(PROJECT_DIR)/TechHeroes/Supporting\\ Files",
+					"$(PROJECT_DIR)/TechHeroes/Supporting\\ Files",
+				);
+				INFOPLIST_FILE = "TechHeroes/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = apps.yoon.TechHeroes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TechHeroes/Supporting Files/TechHeroes-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

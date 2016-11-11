@@ -17,6 +17,7 @@ class HeroListTableViewHeaderView: UITableViewHeaderFooterView {
         super.awakeFromNib()
         profileImageView.layer.cornerRadius = profileImageView.bounds.size.width / 2
         profileImageView.layer.masksToBounds = true
+        contentView.backgroundColor = UIColor.white
     }
     
 }
