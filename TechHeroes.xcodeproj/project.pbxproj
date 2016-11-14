@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46D0433B5474753DA9924E66 /* Pods_TechHeroesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77DDB1EB86E89DE5FD7291BD /* Pods_TechHeroesTests.framework */; };
+		5132B36C7AE54AB46A398B65 /* Pods_TechHeroes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F43586A010447243E96B64 /* Pods_TechHeroes.framework */; };
+		51A89BB41DD92BA00040C586 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A89BB31DD92BA00040C586 /* SignInViewController.swift */; };
+		51A89BB61DD92BB20040C586 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51A89BB51DD92BB20040C586 /* SignInViewController.xib */; };
 		51CCBDBE1DD5527900E56963 /* HeroListTableViewHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51DF3C0D1DD54BD500C4DC89 /* HeroListTableViewHeaderView.xib */; };
 		51CCBDC11DD55F2200E56963 /* HeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CCBDC01DD55F2200E56963 /* HeroDetailViewController.swift */; };
 		51CCBDC41DD562AD00E56963 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51CCBDC31DD562AD00E56963 /* Account.storyboard */; };
@@ -25,7 +29,6 @@
 		51DF3C0A1DD54AC800C4DC89 /* HeroListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51DF3C091DD54AC800C4DC89 /* HeroListTableViewCell.xib */; };
 		51DF3C0C1DD54BC700C4DC89 /* HeroListTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DF3C0B1DD54BC700C4DC89 /* HeroListTableViewHeaderView.swift */; };
 		5A40E99F1DD6341400808838 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A40E99B1DD6341400808838 /* Assets.xcassets */; };
-		5A40E9A01DD6341400808838 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A40E99C1DD6341400808838 /* Info.plist */; };
 		5A40E9A31DD6344300808838 /* linkedin-sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A40E9A21DD6344300808838 /* linkedin-sdk.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51A89BB31DD92BA00040C586 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		51A89BB51DD92BB20040C586 /* SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		51CCBDC01DD55F2200E56963 /* HeroDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroDetailViewController.swift; sourceTree = "<group>"; };
 		51CCBDC31DD562AD00E56963 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		51CCBDC51DD5632F00E56963 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +69,12 @@
 		5A40E99C1DD6341400808838 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A40E99E1DD6341400808838 /* TechHeroes-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TechHeroes-Bridging-Header.h"; sourceTree = "<group>"; };
 		5A40E9A21DD6344300808838 /* linkedin-sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "linkedin-sdk.framework"; sourceTree = "<group>"; };
+		77DDB1EB86E89DE5FD7291BD /* Pods_TechHeroesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechHeroesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE3776AC5652AFE9AB38EB2A /* Pods-TechHeroes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechHeroes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TechHeroes/Pods-TechHeroes.debug.xcconfig"; sourceTree = "<group>"; };
+		BE6C48F387CBAC82F64FD0BD /* Pods-TechHeroesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechHeroesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TechHeroesTests/Pods-TechHeroesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2875CFC3702D41427735BA8 /* Pods-TechHeroes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechHeroes.release.xcconfig"; path = "Pods/Target Support Files/Pods-TechHeroes/Pods-TechHeroes.release.xcconfig"; sourceTree = "<group>"; };
+		DF1079DC18028054E7C51E4C /* Pods-TechHeroesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechHeroesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TechHeroesTests/Pods-TechHeroesTests.release.xcconfig"; sourceTree = "<group>"; };
+		E1F43586A010447243E96B64 /* Pods_TechHeroes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechHeroes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A40E9A31DD6344300808838 /* linkedin-sdk.framework in Frameworks */,
+				5132B36C7AE54AB46A398B65 /* Pods_TechHeroes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +91,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46D0433B5474753DA9924E66 /* Pods_TechHeroesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20719E078A4E964AD8075A7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE3776AC5652AFE9AB38EB2A /* Pods-TechHeroes.debug.xcconfig */,
+				D2875CFC3702D41427735BA8 /* Pods-TechHeroes.release.xcconfig */,
+				BE6C48F387CBAC82F64FD0BD /* Pods-TechHeroesTests.debug.xcconfig */,
+				DF1079DC18028054E7C51E4C /* Pods-TechHeroesTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		51CCBDBF1DD55F0000E56963 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +140,8 @@
 				51DF3BC61DD53AC200C4DC89 /* TechHeroes */,
 				51DF3BDB1DD53AC300C4DC89 /* TechHeroesTests */,
 				51DF3BC51DD53AC200C4DC89 /* Products */,
+				20719E078A4E964AD8075A7D /* Pods */,
+				D6D13CB11FA7DA313590DDA2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,6 +182,8 @@
 				51DF3BFC1DD542E400C4DC89 /* RootTabBarController.swift */,
 				51CCBDC21DD5629400E56963 /* Account */,
 				51DF3BF51DD5426600C4DC89 /* Heroes */,
+				51A89BB31DD92BA00040C586 /* SignInViewController.swift */,
+				51A89BB51DD92BB20040C586 /* SignInViewController.xib */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -203,6 +231,15 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D6D13CB11FA7DA313590DDA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1F43586A010447243E96B64 /* Pods_TechHeroes.framework */,
+				77DDB1EB86E89DE5FD7291BD /* Pods_TechHeroesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -210,9 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51DF3BE11DD53AC300C4DC89 /* Build configuration list for PBXNativeTarget "TechHeroes" */;
 			buildPhases = (
+				6606245F5EC523759E786391 /* [CP] Check Pods Manifest.lock */,
 				51DF3BC01DD53AC200C4DC89 /* Sources */,
 				51DF3BC11DD53AC200C4DC89 /* Frameworks */,
 				51DF3BC21DD53AC200C4DC89 /* Resources */,
+				0C1271C4EAA6A4A8E6C62BBA /* [CP] Embed Pods Frameworks */,
+				B1575688855EC43E141E76E6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,9 +267,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51DF3BE41DD53AC300C4DC89 /* Build configuration list for PBXNativeTarget "TechHeroesTests" */;
 			buildPhases = (
+				AF0A0A3487EA2B94E8A01EF8 /* [CP] Check Pods Manifest.lock */,
 				51DF3BD41DD53AC300C4DC89 /* Sources */,
 				51DF3BD51DD53AC300C4DC89 /* Frameworks */,
 				51DF3BD61DD53AC300C4DC89 /* Resources */,
+				5660B15BA5BC145E1AA2A57C /* [CP] Embed Pods Frameworks */,
+				72C76506149CA72DE2AA09FD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,7 +297,7 @@
 					51DF3BC31DD53AC200C4DC89 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = EG77NM7886;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					51DF3BD71DD53AC300C4DC89 = {
 						CreatedOnToolsVersion = 8.1;
@@ -288,13 +331,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A40E9A01DD6341400808838 /* Info.plist in Resources */,
 				51CCBDBE1DD5527900E56963 /* HeroListTableViewHeaderView.xib in Resources */,
 				51DF3BFF1DD5430A00C4DC89 /* Hero.storyboard in Resources */,
 				51DF3BFB1DD542BD00C4DC89 /* Main.storyboard in Resources */,
 				51DF3C0A1DD54AC800C4DC89 /* HeroListTableViewCell.xib in Resources */,
 				5A40E99F1DD6341400808838 /* Assets.xcassets in Resources */,
 				51DF3BD21DD53AC200C4DC89 /* LaunchScreen.storyboard in Resources */,
+				51A89BB61DD92BB20040C586 /* SignInViewController.xib in Resources */,
 				51CCBDC41DD562AD00E56963 /* Account.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,11 +351,105 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C1271C4EAA6A4A8E6C62BBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TechHeroes/Pods-TechHeroes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5660B15BA5BC145E1AA2A57C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TechHeroesTests/Pods-TechHeroesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6606245F5EC523759E786391 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		72C76506149CA72DE2AA09FD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TechHeroesTests/Pods-TechHeroesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF0A0A3487EA2B94E8A01EF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B1575688855EC43E141E76E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TechHeroes/Pods-TechHeroes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		51DF3BC01DD53AC200C4DC89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51A89BB41DD92BA00040C586 /* SignInViewController.swift in Sources */,
 				51DF3C041DD545DB00C4DC89 /* HeroListViewController.swift in Sources */,
 				51CCBDC11DD55F2200E56963 /* HeroDetailViewController.swift in Sources */,
 				51CCBDC91DD56EC300E56963 /* RequestViewController.swift in Sources */,
@@ -461,8 +598,10 @@
 		};
 		51DF3BE21DD53AC300C4DC89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE3776AC5652AFE9AB38EB2A /* Pods-TechHeroes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = EG77NM7886;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -471,10 +610,12 @@
 					"$(PROJECT_DIR)/TechHeroes/Supporting\\ Files",
 				);
 				INFOPLIST_FILE = "TechHeroes/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = apps.yoon.TechHeroes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e3737799-89c9-49f3-b987-1a6132627835";
+				PROVISIONING_PROFILE_SPECIFIER = "Tech Heroes Phase 1";
 				SWIFT_OBJC_BRIDGING_HEADER = "TechHeroes/Supporting Files/TechHeroes-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -483,8 +624,10 @@
 		};
 		51DF3BE31DD53AC300C4DC89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2875CFC3702D41427735BA8 /* Pods-TechHeroes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = EG77NM7886;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -493,10 +636,12 @@
 					"$(PROJECT_DIR)/TechHeroes/Supporting\\ Files",
 				);
 				INFOPLIST_FILE = "TechHeroes/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = apps.yoon.TechHeroes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e3737799-89c9-49f3-b987-1a6132627835";
+				PROVISIONING_PROFILE_SPECIFIER = "Tech Heroes Phase 1";
 				SWIFT_OBJC_BRIDGING_HEADER = "TechHeroes/Supporting Files/TechHeroes-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -505,8 +650,9 @@
 		};
 		51DF3BE51DD53AC300C4DC89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE6C48F387CBAC82F64FD0BD /* Pods-TechHeroesTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = EG77NM7886;
 				INFOPLIST_FILE = TechHeroesTests/Info.plist;
@@ -520,8 +666,9 @@
 		};
 		51DF3BE61DD53AC300C4DC89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF1079DC18028054E7C51E4C /* Pods-TechHeroesTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = EG77NM7886;
 				INFOPLIST_FILE = TechHeroesTests/Info.plist;

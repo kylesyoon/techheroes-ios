@@ -10,6 +10,11 @@ import UIKit
 
 typealias TempHeroModel = (firstName: String, lastName: String, discipline: String, position: String, company: String, years: Int, rating: String, rate: Double)
 
+fileprivate let estimatedRowHeight: CGFloat = 107.0
+fileprivate let estimatedItemWidth = 100.0
+fileprivate let estimatedItemHeight = 50.0
+fileprivate let detailSegue = "detailSegue"
+
 class HeroListViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
@@ -22,16 +27,17 @@ class HeroListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Heroes"
-        
+
         tableView.register(UINib(nibName: String(describing: HeroListTableViewHeaderView.self), bundle: nil),
                            forHeaderFooterViewReuseIdentifier: String(describing: HeroListTableViewHeaderView.self))
         tableView.register(UINib(nibName: String(describing: HeroListTableViewCell.self), bundle: nil),
                            forCellReuseIdentifier: String(describing: HeroListTableViewCell.self))
-        tableView.estimatedRowHeight = 107.0
+        tableView.estimatedRowHeight = estimatedRowHeight
         
-        flowLayout.estimatedItemSize = CGSize(width: 100.0, height: 50.0)
+        flowLayout.estimatedItemSize = CGSize(width: estimatedItemWidth, height: estimatedItemHeight)
         
+        
+        // TEMP
         disciplines = ["Android", "iOS", "Web", "Systems"]
         
         heroes = [TempHeroModel("Kyle", "Yoon", "iOS", "Level 2 Engineer", "Vokal", 2, "5 Stars", 5.00),
@@ -40,11 +46,16 @@ class HeroListViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "detailSegue" {
+        if segue.identifier == detailSegue {
             if let detail = segue.destination as? HeroDetailViewController {
-                detail.hero = self.selectedHero
+                detail.hero = self.selectedHero // Should I dealloc this after?
             }
         }
+    }
+    
+    @IBAction func didTapSignIn(_ sender: Any) {
+        let signIn = SignInViewController(nibName: String(describing: SignInViewController.self), bundle: nil)
+        present(signIn, animated: true, completion: nil)
     }
     
 }

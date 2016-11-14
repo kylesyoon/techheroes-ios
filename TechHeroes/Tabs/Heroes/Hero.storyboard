@@ -90,7 +90,13 @@
                             <constraint firstItem="Na3-Dh-HYp" firstAttribute="top" secondItem="Q5z-sD-8kR" secondAttribute="bottom" id="zBP-Ul-wd0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Heroes" id="CNf-0a-jOm"/>
+                    <navigationItem key="navigationItem" title="Heroes" id="CNf-0a-jOm">
+                        <barButtonItem key="rightBarButtonItem" title="Sign In" id="3vs-ot-e8Y">
+                            <connections>
+                                <action selector="didTapSignIn:" destination="b6g-XP-83q" id="8yv-vJ-m9M"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="aVw-n7-59s" id="BeZ-Io-bP3"/>
                         <outlet property="flowLayout" destination="yIZ-uF-I1G" id="QoM-2y-EEX"/>
