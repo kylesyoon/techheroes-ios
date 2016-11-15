@@ -10,6 +10,5 @@
 #define TechHeroes_Bridging_Header_h
 
 #import <Foundation/Foundation.h>
-#import <linkedin-sdk/LISDK.h>
 
 #endif /* TechHeroes_Bridging_Header_h */

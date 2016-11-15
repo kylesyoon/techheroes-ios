@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		46D0433B5474753DA9924E66 /* Pods_TechHeroesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77DDB1EB86E89DE5FD7291BD /* Pods_TechHeroesTests.framework */; };
 		5132B36C7AE54AB46A398B65 /* Pods_TechHeroes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F43586A010447243E96B64 /* Pods_TechHeroes.framework */; };
+		518CEF691DDB739300FD6CA4 /* APIUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518CEF681DDB739300FD6CA4 /* APIUtility.swift */; };
+		518CEF6B1DDB766800FD6CA4 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518CEF6A1DDB766800FD6CA4 /* Keys.swift */; };
+		518CEF6D1DDBAEFD00FD6CA4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518CEF6C1DDBAEFD00FD6CA4 /* User.swift */; };
+		518CEF6F1DDBB2FA00FD6CA4 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518CEF6E1DDBB2FA00FD6CA4 /* Position.swift */; };
+		518CEF711DDBB31300FD6CA4 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518CEF701DDBB31300FD6CA4 /* Company.swift */; };
 		51A89BB41DD92BA00040C586 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A89BB31DD92BA00040C586 /* SignInViewController.swift */; };
 		51A89BB61DD92BB20040C586 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51A89BB51DD92BB20040C586 /* SignInViewController.xib */; };
 		51CCBDBE1DD5527900E56963 /* HeroListTableViewHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51DF3C0D1DD54BD500C4DC89 /* HeroListTableViewHeaderView.xib */; };
@@ -29,7 +34,6 @@
 		51DF3C0A1DD54AC800C4DC89 /* HeroListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51DF3C091DD54AC800C4DC89 /* HeroListTableViewCell.xib */; };
 		51DF3C0C1DD54BC700C4DC89 /* HeroListTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DF3C0B1DD54BC700C4DC89 /* HeroListTableViewHeaderView.swift */; };
 		5A40E99F1DD6341400808838 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A40E99B1DD6341400808838 /* Assets.xcassets */; };
-		5A40E9A31DD6344300808838 /* linkedin-sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A40E9A21DD6344300808838 /* linkedin-sdk.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		518CEF681DDB739300FD6CA4 /* APIUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUtility.swift; sourceTree = "<group>"; };
+		518CEF6A1DDB766800FD6CA4 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = SOURCE_ROOT; };
+		518CEF6C1DDBAEFD00FD6CA4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		518CEF6E1DDBB2FA00FD6CA4 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		518CEF701DDBB31300FD6CA4 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		51A89BB31DD92BA00040C586 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		51A89BB51DD92BB20040C586 /* SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		51CCBDC01DD55F2200E56963 /* HeroDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroDetailViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +77,6 @@
 		5A40E99B1DD6341400808838 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A40E99C1DD6341400808838 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A40E99E1DD6341400808838 /* TechHeroes-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TechHeroes-Bridging-Header.h"; sourceTree = "<group>"; };
-		5A40E9A21DD6344300808838 /* linkedin-sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "linkedin-sdk.framework"; sourceTree = "<group>"; };
 		77DDB1EB86E89DE5FD7291BD /* Pods_TechHeroesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechHeroesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3776AC5652AFE9AB38EB2A /* Pods-TechHeroes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechHeroes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TechHeroes/Pods-TechHeroes.debug.xcconfig"; sourceTree = "<group>"; };
 		BE6C48F387CBAC82F64FD0BD /* Pods-TechHeroesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechHeroesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TechHeroesTests/Pods-TechHeroesTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,7 +90,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A40E9A31DD6344300808838 /* linkedin-sdk.framework in Frameworks */,
 				5132B36C7AE54AB46A398B65 /* Pods_TechHeroes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +114,14 @@
 				DF1079DC18028054E7C51E4C /* Pods-TechHeroesTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		518CEF671DDB735200FD6CA4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				518CEF681DDB739300FD6CA4 /* APIUtility.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		51CCBDBF1DD55F0000E56963 /* Detail */ = {
@@ -157,11 +172,13 @@
 		51DF3BC61DD53AC200C4DC89 /* TechHeroes */ = {
 			isa = PBXGroup;
 			children = (
+				518CEF6A1DDB766800FD6CA4 /* Keys.swift */,
 				51DF3BC71DD53AC200C4DC89 /* AppDelegate.swift */,
 				51DF3BD01DD53AC200C4DC89 /* LaunchScreen.storyboard */,
 				51DF3BF91DD542BD00C4DC89 /* Main.storyboard */,
-				51DF3BF31DD541E100C4DC89 /* Tabs */,
 				51DF3BF41DD5423A00C4DC89 /* Models */,
+				518CEF671DDB735200FD6CA4 /* Networking */,
+				51DF3BF31DD541E100C4DC89 /* Tabs */,
 				5A40E99A1DD633DF00808838 /* Supporting Files */,
 			);
 			path = TechHeroes;
@@ -191,6 +208,9 @@
 		51DF3BF41DD5423A00C4DC89 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				518CEF6C1DDBAEFD00FD6CA4 /* User.swift */,
+				518CEF6E1DDBB2FA00FD6CA4 /* Position.swift */,
+				518CEF701DDBB31300FD6CA4 /* Company.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -223,7 +243,6 @@
 		5A40E99A1DD633DF00808838 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5A40E9A21DD6344300808838 /* linkedin-sdk.framework */,
 				5A40E99B1DD6341400808838 /* Assets.xcassets */,
 				5A40E99C1DD6341400808838 /* Info.plist */,
 				5A40E99E1DD6341400808838 /* TechHeroes-Bridging-Header.h */,
@@ -450,16 +469,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				51A89BB41DD92BA00040C586 /* SignInViewController.swift in Sources */,
+				518CEF691DDB739300FD6CA4 /* APIUtility.swift in Sources */,
 				51DF3C041DD545DB00C4DC89 /* HeroListViewController.swift in Sources */,
 				51CCBDC11DD55F2200E56963 /* HeroDetailViewController.swift in Sources */,
+				518CEF6B1DDB766800FD6CA4 /* Keys.swift in Sources */,
 				51CCBDC91DD56EC300E56963 /* RequestViewController.swift in Sources */,
+				518CEF6D1DDBAEFD00FD6CA4 /* User.swift in Sources */,
 				51DF3C081DD54ABD00C4DC89 /* HeroListTableViewCell.swift in Sources */,
+				518CEF6F1DDBB2FA00FD6CA4 /* Position.swift in Sources */,
 				51DF3C021DD544C900C4DC89 /* HeroListDataSource.swift in Sources */,
 				51DF3BC81DD53AC200C4DC89 /* AppDelegate.swift in Sources */,
 				51DF3BFD1DD542E400C4DC89 /* RootTabBarController.swift in Sources */,
 				51DF3C0C1DD54BC700C4DC89 /* HeroListTableViewHeaderView.swift in Sources */,
 				51DF3C061DD546FA00C4DC89 /* HeroDisciplineCollectionViewCell.swift in Sources */,
 				51CCBDC61DD5632F00E56963 /* AccountViewController.swift in Sources */,
+				518CEF711DDBB31300FD6CA4 /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

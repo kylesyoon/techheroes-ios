@@ -9,61 +9,62 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TechHeroes/Tabs/SignInViewController.swift"
-            timestampString = "500782587.253177"
+            filePath = "TechHeroes/Networking/APIUtility.swift"
+            timestampString = "500941424.386506"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "fetchUserInfo()"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "requestUserInfo(for:success:failure:)"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "TechHeroes.SignInViewController.fetchUserInfo () -&gt; ()"
+                  symbolName = "static TechHeroes.APIUtility.(requestUserInfo (for : Swift.String, success : (TechHeroes.User) -&gt; (), failure : (Swift.Error) -&gt; ()) -&gt; ()).(closure #1)"
                   moduleName = "TechHeroes"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kyleyoon/Development/TechHeroes/TechHeroes/Tabs/SignInViewController.swift"
-                  timestampString = "500783199.387979"
+                  urlString = "file:///Users/kyleyoon/Development/TechHeroes/TechHeroes/Networking/APIUtility.swift"
+                  timestampString = "500941684.895685"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "780">
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "20572">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "TechHeroes.SignInViewController.(fetchUserInfo () -&gt; ()).(closure #1)"
+                  symbolName = "static TechHeroes.APIUtility.(requestUserInfo (for : Swift.String, success : (TechHeroes.User) -&gt; (), failure : (Swift.Error) -&gt; ()) -&gt; ()).(closure #1)"
                   moduleName = "TechHeroes"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kyleyoon/Development/TechHeroes/TechHeroes/Tabs/SignInViewController.swift"
-                  timestampString = "500783199.391495"
+                  urlString = "file:///Users/kyleyoon/Development/TechHeroes/TechHeroes/Networking/APIUtility.swift"
+                  timestampString = "500941684.898622"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TechHeroes.SignInViewController.(fetchUserInfo () -&gt; ()).(closure #2)"
-                  moduleName = "TechHeroes"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kyleyoon/Development/TechHeroes/TechHeroes/Tabs/SignInViewController.swift"
-                  timestampString = "500783199.39439"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "16">
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "21124">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TechHeroes/Tabs/SignInViewController.swift"
+            timestampString = "500941580.792142"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "webView(_:decidePolicyFor:decisionHandler:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

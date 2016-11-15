@@ -53,9 +53,15 @@ class HeroListViewController: UIViewController {
         }
     }
     
-    @IBAction func didTapSignIn(_ sender: Any) {
+    @IBAction fileprivate func didTapSignIn(_ sender: Any) {
         let signIn = SignInViewController(nibName: String(describing: SignInViewController.self), bundle: nil)
-        present(signIn, animated: true, completion: nil)
+        let nav = UINavigationController(rootViewController: signIn)
+        nav.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(dismissSignInViewController))
+        present(nav, animated: true, completion: nil)
+    }
+    
+    @objc fileprivate func dismissSignInViewController() {
+        dismiss(animated: true, completion: nil)
     }
     
 }

@@ -18,20 +18,7 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2o-TG-7ZT">
-                    <rect key="frame" x="117" y="318" width="141" height="30"/>
-                    <state key="normal" title="Sign in with LinkedIn"/>
-                    <connections>
-                        <action selector="didTapSignInWithLinkedIn:" destination="-1" eventType="touchUpInside" id="2Dc-4L-j8G"/>
-                    </connections>
-                </button>
-            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="X2o-TG-7ZT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hu9-EY-Rtr"/>
-                <constraint firstItem="X2o-TG-7ZT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="sfJ-sK-XA9"/>
-            </constraints>
         </view>
     </objects>
 </document>

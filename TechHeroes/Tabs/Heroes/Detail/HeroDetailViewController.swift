@@ -18,12 +18,13 @@ class HeroDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.image = #imageLiteral(resourceName: "nobody")
+        
         guard let hero = hero else {
             return
         }
         
         nameLabel.text = hero.firstName + " " + hero.lastName
+        imageView.image = #imageLiteral(resourceName: "nobody")
         
         let requestButton = UIBarButtonItem(title: "Request", style: .plain, target: self, action: #selector(HeroDetailViewController.didTapRequestButton))
         navigationItem.rightBarButtonItem = requestButton
