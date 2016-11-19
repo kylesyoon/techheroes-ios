@@ -6,11 +6,13 @@
 //  Copyright © 2016 Kyle Yoon. All rights reserved.
 //
 
+// TODO: Clean this shit up once we're talking with our own API
+
 import Foundation
 import Alamofire
 
 struct APIUtility {
-    
+
     static func requestAccessToken(for authCode: String, success: @escaping (String, Int) -> Void, failure: @escaping (Error) -> Void) {
         let accessTokenURL = "https://www.linkedin.com/oauth/v2/accessToken"
         let grantType = "authorization_code"
@@ -44,7 +46,7 @@ struct APIUtility {
     }
     
     static func requestUserInfo(for accessToken: String, success: @escaping (User) -> Void, failure: @escaping (Error) -> Void) {
-        let profileURL = "https://api.linkedin.com/v1/people/~:(id,first-name,last-name,headline,location:(name,country:(code)),industry,num-connections,num-connections-capped,summary,specialties,positions:(id,title,summary,start-date,end-date,is-current,company:(id,name,type,industry,ticker)),picture-url,picture-urls::(original),public-profile-url)"
+        let profileURL = "https://api.linkedin.com/v1/people/~:(id,first-name,last-name,headline,location:(name,country:(code)),industry,num-connections,num-connections-capped,summary,specialties,positions:(id,title,summary,start-date,end-date,is-current,company:(id,name,type,industry,ticker)),picture-url,picture-urls::(original),public-profile-url,email-address)"
         let headers = ["Content-Type": "application/x-www-form-urlencoded;",
                        "x-li-format": "json",
                        "Authorization": "Bearer \(accessToken)"]
@@ -56,7 +58,6 @@ struct APIUtility {
             .responseJSON { response in
                 switch response.result {
                 case .success:
-                    // TODO: Come back and do some proper parsing
                     guard let dictionary = response.result.value as? [String: Any],
                     let positionJSON = dictionary["positions"] as? [String: Any],
                         let positionValues = positionJSON["values"] as? [[String: Any]],

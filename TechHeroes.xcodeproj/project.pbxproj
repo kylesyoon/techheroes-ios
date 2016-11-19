@@ -14,6 +14,7 @@
 		518CEF6D1DDBAEFD00FD6CA4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518CEF6C1DDBAEFD00FD6CA4 /* User.swift */; };
 		518CEF6F1DDBB2FA00FD6CA4 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518CEF6E1DDBB2FA00FD6CA4 /* Position.swift */; };
 		518CEF711DDBB31300FD6CA4 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518CEF701DDBB31300FD6CA4 /* Company.swift */; };
+		5198D6721DDE78F700B8532A /* AccountImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5198D6711DDE78F700B8532A /* AccountImageViewCell.swift */; };
 		51A89BB41DD92BA00040C586 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A89BB31DD92BA00040C586 /* SignInViewController.swift */; };
 		51A89BB61DD92BB20040C586 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51A89BB51DD92BB20040C586 /* SignInViewController.xib */; };
 		51CCBDBE1DD5527900E56963 /* HeroListTableViewHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51DF3C0D1DD54BD500C4DC89 /* HeroListTableViewHeaderView.xib */; };
@@ -33,6 +34,9 @@
 		51DF3C081DD54ABD00C4DC89 /* HeroListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DF3C071DD54ABD00C4DC89 /* HeroListTableViewCell.swift */; };
 		51DF3C0A1DD54AC800C4DC89 /* HeroListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51DF3C091DD54AC800C4DC89 /* HeroListTableViewCell.xib */; };
 		51DF3C0C1DD54BC700C4DC89 /* HeroListTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DF3C0B1DD54BC700C4DC89 /* HeroListTableViewHeaderView.swift */; };
+		51E1D4541DDFCBB400DD98D9 /* UIFont+TechHeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E1D4531DDFCBB400DD98D9 /* UIFont+TechHeroes.swift */; };
+		51E1D4561DDFCE3000DD98D9 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E1D4551DDFCE3000DD98D9 /* DatePickerView.swift */; };
+		51E1D4581DDFD1FE00DD98D9 /* DatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E1D4571DDFD1FE00DD98D9 /* DatePickerView.xib */; };
 		5A40E99F1DD6341400808838 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A40E99B1DD6341400808838 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +56,7 @@
 		518CEF6C1DDBAEFD00FD6CA4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		518CEF6E1DDBB2FA00FD6CA4 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		518CEF701DDBB31300FD6CA4 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		5198D6711DDE78F700B8532A /* AccountImageViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountImageViewCell.swift; sourceTree = "<group>"; };
 		51A89BB31DD92BA00040C586 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		51A89BB51DD92BB20040C586 /* SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		51CCBDC01DD55F2200E56963 /* HeroDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroDetailViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +79,9 @@
 		51DF3C091DD54AC800C4DC89 /* HeroListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeroListTableViewCell.xib; sourceTree = "<group>"; };
 		51DF3C0B1DD54BC700C4DC89 /* HeroListTableViewHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroListTableViewHeaderView.swift; sourceTree = "<group>"; };
 		51DF3C0D1DD54BD500C4DC89 /* HeroListTableViewHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeroListTableViewHeaderView.xib; sourceTree = "<group>"; };
+		51E1D4531DDFCBB400DD98D9 /* UIFont+TechHeroes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+TechHeroes.swift"; sourceTree = "<group>"; };
+		51E1D4551DDFCE3000DD98D9 /* DatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		51E1D4571DDFD1FE00DD98D9 /* DatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerView.xib; sourceTree = "<group>"; };
 		5A40E99B1DD6341400808838 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A40E99C1DD6341400808838 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A40E99E1DD6341400808838 /* TechHeroes-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TechHeroes-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -137,6 +145,7 @@
 			children = (
 				51CCBDC31DD562AD00E56963 /* Account.storyboard */,
 				51CCBDC51DD5632F00E56963 /* AccountViewController.swift */,
+				5198D6711DDE78F700B8532A /* AccountImageViewCell.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -145,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				51CCBDC81DD56EC300E56963 /* RequestViewController.swift */,
+				51E1D4551DDFCE3000DD98D9 /* DatePickerView.swift */,
+				51E1D4571DDFD1FE00DD98D9 /* DatePickerView.xib */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -176,6 +187,7 @@
 				51DF3BC71DD53AC200C4DC89 /* AppDelegate.swift */,
 				51DF3BD01DD53AC200C4DC89 /* LaunchScreen.storyboard */,
 				51DF3BF91DD542BD00C4DC89 /* Main.storyboard */,
+				51E1D4521DDFCB9D00DD98D9 /* Extensions */,
 				51DF3BF41DD5423A00C4DC89 /* Models */,
 				518CEF671DDB735200FD6CA4 /* Networking */,
 				51DF3BF31DD541E100C4DC89 /* Tabs */,
@@ -238,6 +250,14 @@
 				51DF3C091DD54AC800C4DC89 /* HeroListTableViewCell.xib */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		51E1D4521DDFCB9D00DD98D9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				51E1D4531DDFCBB400DD98D9 /* UIFont+TechHeroes.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		5A40E99A1DD633DF00808838 /* Supporting Files */ = {
@@ -353,6 +373,7 @@
 				51CCBDBE1DD5527900E56963 /* HeroListTableViewHeaderView.xib in Resources */,
 				51DF3BFF1DD5430A00C4DC89 /* Hero.storyboard in Resources */,
 				51DF3BFB1DD542BD00C4DC89 /* Main.storyboard in Resources */,
+				51E1D4581DDFD1FE00DD98D9 /* DatePickerView.xib in Resources */,
 				51DF3C0A1DD54AC800C4DC89 /* HeroListTableViewCell.xib in Resources */,
 				5A40E99F1DD6341400808838 /* Assets.xcassets in Resources */,
 				51DF3BD21DD53AC200C4DC89 /* LaunchScreen.storyboard in Resources */,
@@ -474,13 +495,16 @@
 				51CCBDC11DD55F2200E56963 /* HeroDetailViewController.swift in Sources */,
 				518CEF6B1DDB766800FD6CA4 /* Keys.swift in Sources */,
 				51CCBDC91DD56EC300E56963 /* RequestViewController.swift in Sources */,
+				51E1D4561DDFCE3000DD98D9 /* DatePickerView.swift in Sources */,
 				518CEF6D1DDBAEFD00FD6CA4 /* User.swift in Sources */,
 				51DF3C081DD54ABD00C4DC89 /* HeroListTableViewCell.swift in Sources */,
 				518CEF6F1DDBB2FA00FD6CA4 /* Position.swift in Sources */,
 				51DF3C021DD544C900C4DC89 /* HeroListDataSource.swift in Sources */,
 				51DF3BC81DD53AC200C4DC89 /* AppDelegate.swift in Sources */,
+				51E1D4541DDFCBB400DD98D9 /* UIFont+TechHeroes.swift in Sources */,
 				51DF3BFD1DD542E400C4DC89 /* RootTabBarController.swift in Sources */,
 				51DF3C0C1DD54BC700C4DC89 /* HeroListTableViewHeaderView.swift in Sources */,
+				5198D6721DDE78F700B8532A /* AccountImageViewCell.swift in Sources */,
 				51DF3C061DD546FA00C4DC89 /* HeroDisciplineCollectionViewCell.swift in Sources */,
 				51CCBDC61DD5632F00E56963 /* AccountViewController.swift in Sources */,
 				518CEF711DDBB31300FD6CA4 /* Company.swift in Sources */,

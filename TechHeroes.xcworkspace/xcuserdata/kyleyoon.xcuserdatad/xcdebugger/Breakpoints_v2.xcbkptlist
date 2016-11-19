@@ -10,45 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TechHeroes/Networking/APIUtility.swift"
-            timestampString = "500941424.386506"
+            timestampString = "501210698.694052"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "requestUserInfo(for:success:failure:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static TechHeroes.APIUtility.(requestUserInfo (for : Swift.String, success : (TechHeroes.User) -&gt; (), failure : (Swift.Error) -&gt; ()) -&gt; ()).(closure #1)"
-                  moduleName = "TechHeroes"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kyleyoon/Development/TechHeroes/TechHeroes/Networking/APIUtility.swift"
-                  timestampString = "500941684.895685"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "93"
-                  endingLineNumber = "93"
-                  offsetFromSymbolStart = "20572">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static TechHeroes.APIUtility.(requestUserInfo (for : Swift.String, success : (TechHeroes.User) -&gt; (), failure : (Swift.Error) -&gt; ()) -&gt; ()).(closure #1)"
-                  moduleName = "TechHeroes"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kyleyoon/Development/TechHeroes/TechHeroes/Networking/APIUtility.swift"
-                  timestampString = "500941684.898622"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "93"
-                  endingLineNumber = "93"
-                  offsetFromSymbolStart = "21124">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -57,13 +25,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TechHeroes/Tabs/SignInViewController.swift"
-            timestampString = "500941580.792142"
+            filePath = "TechHeroes/Tabs/RootTabBarController.swift"
+            timestampString = "501216580.913045"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "webView(_:decidePolicyFor:decisionHandler:)"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "tabBarController(_:didSelect:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TechHeroes/Tabs/Account/AccountViewController.swift"
+            timestampString = "501216601.887461"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

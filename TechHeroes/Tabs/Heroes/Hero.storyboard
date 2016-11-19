@@ -285,50 +285,129 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="706"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lZw-TJ-qPH">
-                                <rect key="frame" x="0.0" y="64" width="375" height="642"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="nEi-FT-lgT">
+                                <rect key="frame" x="8" y="64" width="359" height="612"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="nEi-FT-lgT">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="642"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xs4-Bu-9vU">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="150"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlq-dA-GoR">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="180.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlq-dA-GoR">
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="4yj-EM-Smm"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q46-K0-xvG">
-                                                <rect key="frame" x="0.0" y="230.5" width="375" height="181"/>
-                                                <nil key="textColor"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uQF-bS-a7f">
+                                                <rect key="frame" x="0.0" y="30" width="359" height="120"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="v8o-TC-Z7l"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERq-sA-jNQ">
-                                                <rect key="frame" x="0.0" y="461.5" width="375" height="180.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="IMv-EM-1Bk" id="wwq-Kn-BlK"/>
+                                                </connections>
+                                            </textView>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uKL-ol-gRw">
+                                        <rect key="frame" x="0.0" y="263.5" width="359" height="100"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimated Length" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERq-sA-jNQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="8ap-RX-zpj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" countDownDuration="900" minuteInterval="15" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAh-Ug-z26">
+                                                <rect key="frame" x="100" y="0.0" width="259" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="spJ-H5-64G"/>
+                                                </constraints>
+                                                <date key="date" timeIntervalSinceReferenceDate="501120733.280563">
+                                                    <!--2016-11-18 00:12:13 +0000-->
+                                                </date>
+                                            </datePicker>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="GAY-7A-A4s"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="j3h-Kg-uL4">
+                                        <rect key="frame" x="0.0" y="477" width="359" height="135"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggest some times you're free to talk" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFd-U7-PLj">
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="m4g-W4-aV4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1P-ja-hT5">
+                                                <rect key="frame" x="0.0" y="30" width="359" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="z4J-cy-dJ0"/>
+                                                </constraints>
+                                                <state key="normal" title="Time Slot 1"/>
+                                                <connections>
+                                                    <action selector="didTapTimeSlotButton:" destination="IMv-EM-1Bk" eventType="touchUpInside" id="Pyt-IY-i92"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYf-Kv-Lsy">
+                                                <rect key="frame" x="0.0" y="65" width="359" height="35"/>
+                                                <state key="normal" title="Time Slot 2"/>
+                                                <connections>
+                                                    <action selector="didTapTimeSlotButton:" destination="IMv-EM-1Bk" eventType="touchUpInside" id="Ep7-RJ-eHE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4u-lM-UfR">
+                                                <rect key="frame" x="0.0" y="100" width="359" height="35"/>
+                                                <state key="normal" title="Time Slot 3"/>
+                                                <connections>
+                                                    <action selector="didTapTimeSlotButton:" destination="IMv-EM-1Bk" eventType="touchUpInside" id="sc2-5V-Eh1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="P4u-lM-UfR" firstAttribute="height" secondItem="y1P-ja-hT5" secondAttribute="height" id="WWI-dU-Qc1"/>
+                                            <constraint firstItem="FYf-Kv-Lsy" firstAttribute="height" secondItem="y1P-ja-hT5" secondAttribute="height" id="lhc-H8-k31"/>
+                                        </constraints>
+                                    </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="nEi-FT-lgT" firstAttribute="leading" secondItem="lZw-TJ-qPH" secondAttribute="leading" id="1m2-4d-Gxt"/>
-                                    <constraint firstItem="nEi-FT-lgT" firstAttribute="centerX" secondItem="lZw-TJ-qPH" secondAttribute="centerX" id="PEm-7A-yYV"/>
-                                    <constraint firstItem="nEi-FT-lgT" firstAttribute="top" secondItem="lZw-TJ-qPH" secondAttribute="top" id="R9F-8N-VTr"/>
-                                    <constraint firstAttribute="trailing" secondItem="nEi-FT-lgT" secondAttribute="trailing" id="iz0-pb-7DR"/>
-                                    <constraint firstItem="nEi-FT-lgT" firstAttribute="centerY" secondItem="lZw-TJ-qPH" secondAttribute="centerY" id="mFO-O7-j60"/>
-                                </constraints>
-                            </scrollView>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please tell the Hero what your goal is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w71-Vw-KKb">
+                                <rect key="frame" x="16" y="104" width="239" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="lZw-TJ-qPH" firstAttribute="leading" secondItem="LEf-kw-bYu" secondAttribute="leading" id="Lcb-Cp-U8l"/>
-                            <constraint firstAttribute="trailing" secondItem="lZw-TJ-qPH" secondAttribute="trailing" id="hWO-bp-cOI"/>
-                            <constraint firstItem="lZw-TJ-qPH" firstAttribute="top" secondItem="6Ub-e5-3EL" secondAttribute="bottom" id="pLU-qd-sg6"/>
-                            <constraint firstItem="4SG-jB-K4O" firstAttribute="top" secondItem="lZw-TJ-qPH" secondAttribute="bottom" id="sXP-4u-MYR"/>
+                            <constraint firstItem="w71-Vw-KKb" firstAttribute="leading" secondItem="nEi-FT-lgT" secondAttribute="leading" constant="8" id="MLe-VW-rao"/>
+                            <constraint firstItem="nEi-FT-lgT" firstAttribute="leading" secondItem="LEf-kw-bYu" secondAttribute="leading" constant="8" id="OwJ-dk-RR6"/>
+                            <constraint firstItem="w71-Vw-KKb" firstAttribute="top" secondItem="Xs4-Bu-9vU" secondAttribute="top" constant="40" id="Wrn-d2-Gti"/>
+                            <constraint firstAttribute="trailing" secondItem="nEi-FT-lgT" secondAttribute="trailing" constant="8" id="YR3-CR-ALs"/>
+                            <constraint firstItem="nEi-FT-lgT" firstAttribute="top" secondItem="6Ub-e5-3EL" secondAttribute="bottom" id="eM6-6U-Qfa"/>
+                            <constraint firstItem="4SG-jB-K4O" firstAttribute="top" secondItem="nEi-FT-lgT" secondAttribute="bottom" constant="30" id="s6j-pA-PqX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="messageTextView" destination="uQF-bS-a7f" id="Eoo-eT-CC3"/>
+                        <outlet property="placeholderLabel" destination="w71-Vw-KKb" id="C08-Jy-TwA"/>
+                        <outlet property="timeSlotButtonOne" destination="y1P-ja-hT5" id="bmF-Ec-Owk"/>
+                        <outlet property="timeSlotButtonThree" destination="P4u-lM-UfR" id="Zwf-hl-h8i"/>
+                        <outlet property="timeSlotButtonTwo" destination="FYf-Kv-Lsy" id="DFF-v0-b24"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3jf-Hg-H9k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

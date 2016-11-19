@@ -8,11 +8,18 @@
 
 import UIKit
 import WebKit
-import Alamofire
-import Locksmith
+
+protocol SignInViewControllerDelegate: class {
+    
+    func viewController(viewController: SignInViewController, didSignInFor user: User)
+    func didTapCancel(for viewController: SignInViewController)
+    
+}
 
 class SignInViewController: UIViewController, WKUIDelegate {
-
+    
+    weak var delegate: SignInViewControllerDelegate?
+    
     override func viewDidLayoutSubviews() {
         addAuthLoadedWebView()
     }
@@ -43,6 +50,10 @@ class SignInViewController: UIViewController, WKUIDelegate {
         webView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         webView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
     }
+    
+    func didTapCancel() {
+        delegate?.didTapCancel(for: self)
+    }
 
 }
 
@@ -59,11 +70,12 @@ extension SignInViewController: WKNavigationDelegate {
                                           success: { token, expiration in
                                             // Get user info
                                             APIUtility.requestUserInfo(for: token,
-                                                                       success: { user in
-                                                                        do {
-                                                                            try Locksmith.saveData(data: ["oauth": ["token": token, "expiry": Date()]], forUserAccount: user.id)
-                                                                        } catch {
-                                                                            // ??
+                                                                       success: {
+                                                                        [weak self]
+                                                                        user in
+                                                                        // TODO: local persistence
+                                                                        if let strongSelf = self {
+                                                                            strongSelf.delegate?.viewController(viewController: strongSelf, didSignInFor: user)
                                                                         }
                                                                         
                                             },
@@ -73,6 +85,7 @@ extension SignInViewController: WKNavigationDelegate {
             },
                                           failure: { error in
             })
+//            delegate?.viewController(viewController: self, didReceiveAuthCode: code)
         }
 
         decisionHandler(.allow)

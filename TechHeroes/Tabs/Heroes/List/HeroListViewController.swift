@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Locksmith
 
 typealias TempHeroModel = (firstName: String, lastName: String, discipline: String, position: String, company: String, years: Int, rating: String, rate: Double)
 
@@ -21,9 +22,11 @@ class HeroListViewController: UIViewController {
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var flowLayout: UICollectionViewFlowLayout!
     
+    weak var signInPresenter: SignInPresenter?
     var heroes = [TempHeroModel]()
     var disciplines = [String]()
     var selectedHero: TempHeroModel?
+    var currentUser: User?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +38,6 @@ class HeroListViewController: UIViewController {
         tableView.estimatedRowHeight = estimatedRowHeight
         
         flowLayout.estimatedItemSize = CGSize(width: estimatedItemWidth, height: estimatedItemHeight)
-        
         
         // TEMP
         disciplines = ["Android", "iOS", "Web", "Systems"]
@@ -54,10 +56,7 @@ class HeroListViewController: UIViewController {
     }
     
     @IBAction fileprivate func didTapSignIn(_ sender: Any) {
-        let signIn = SignInViewController(nibName: String(describing: SignInViewController.self), bundle: nil)
-        let nav = UINavigationController(rootViewController: signIn)
-        nav.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(dismissSignInViewController))
-        present(nav, animated: true, completion: nil)
+        signInPresenter?.presentSignIn()
     }
     
     @objc fileprivate func dismissSignInViewController() {
@@ -149,3 +148,13 @@ extension HeroListViewController: UICollectionViewDelegate {
     }
     
 }
+
+extension HeroListViewController: Authenticatable {
+    
+    func refresh(with user: User) {
+        navigationItem.rightBarButtonItem = nil
+        currentUser = user
+    }
+    
+}
+
