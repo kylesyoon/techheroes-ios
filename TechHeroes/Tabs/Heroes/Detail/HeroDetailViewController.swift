@@ -13,6 +13,10 @@ class HeroDetailViewController: UIViewController {
     @IBOutlet var detailStackView: UIStackView!
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var headlineLabel: UILabel!
+    @IBOutlet var yearsLabel: UILabel!
+    @IBOutlet var summaryLabel: UILabel!
+    @IBOutlet var positionsStackView: UIStackView!
     
     var hero: TempHeroModel?
     

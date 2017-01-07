@@ -95,6 +95,8 @@ extension AccountViewController: Authenticatable {
     func refresh(with user: User) {
         currentUser = user
         tableView.reloadData()
+        anonView.isHidden = true
+        navigationItem.rightBarButtonItem = nil
     }
     
 }

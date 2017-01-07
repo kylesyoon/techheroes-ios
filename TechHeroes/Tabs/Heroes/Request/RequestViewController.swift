@@ -66,6 +66,13 @@ class RequestViewController: UIViewController {
     
     func presentDatePickerView() {
         guard let datePickerView = datePickerView else { return }
+        let now = Date()
+        datePickerView.datePicker.minimumDate = now
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = TimeZone.current
+        var offset = DateComponents()
+        offset.year = 1
+        datePickerView.datePicker.maximumDate = calendar.date(byAdding: offset, to: now)
         UIView.animate(withDuration: 0.3) {
             datePickerView.frame = CGRect(x: 0,
                                           y: self.view.frame.size.height / 2,
