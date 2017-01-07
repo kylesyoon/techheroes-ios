@@ -19,6 +19,7 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata/
+*.xcbkptlist
 
 ## Other
 *.moved-aside
@@ -47,6 +48,8 @@ playground.xcworkspace
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
 # Pods/
+
+Pods/Pods.xcodeproj/xcuserdata/
 
 # fastlane
 #
